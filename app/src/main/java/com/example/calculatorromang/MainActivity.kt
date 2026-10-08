@@ -54,6 +54,11 @@ fun TipCalculatorScreen() {
         verticalArrangement = Arrangement.Top
     ) {
 
+        Text(
+            text = "Сумма заказа",
+            fontSize = 18.sp
+        )
+
         OutlinedTextField(
             value = SummaZacaz,
             onValueChange = {
@@ -65,6 +70,25 @@ fun TipCalculatorScreen() {
             modifier = Modifier.fillMaxWidth()
         )
 
+        Spacer(
+            modifier = Modifier.height(16.dp)
+        )
+
+        Text(
+            text = "Количество блюд",
+            fontSize = 18.sp
+        )
+
+        OutlinedTextField(
+            value = ColVoBlyd,
+            onValueChange = {
+                ColVoBlyd = it
+            },
+            label = {
+                Text("Количество блюд")
+            },
+            modifier = Modifier.fillMaxWidth()
+        )
     }
 }
 
