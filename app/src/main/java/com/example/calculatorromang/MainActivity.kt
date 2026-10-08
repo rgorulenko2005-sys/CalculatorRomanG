@@ -157,7 +157,7 @@ fun ScidcaRadioButtons(scidca: Int) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             RadioButton(
-                selected = false,
+                selected = scidca == 3,
                 onClick = null
             )
 
@@ -168,7 +168,7 @@ fun ScidcaRadioButtons(scidca: Int) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             RadioButton(
-                selected = false,
+                selected = scidca == 5,
                 onClick = null
             )
 
@@ -179,7 +179,7 @@ fun ScidcaRadioButtons(scidca: Int) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             RadioButton(
-                selected = false,
+                selected = scidca == 7,
                 onClick = null
             )
 
@@ -190,7 +190,7 @@ fun ScidcaRadioButtons(scidca: Int) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             RadioButton(
-                selected = true,
+                selected = scidca == 10,
                 onClick = null
             )
 
