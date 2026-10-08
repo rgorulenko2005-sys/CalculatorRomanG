@@ -89,6 +89,24 @@ fun TipCalculatorScreen() {
             },
             modifier = Modifier.fillMaxWidth()
         )
+
+        Spacer(
+            modifier = Modifier.height(32.dp)
+        )
+
+        Text(
+            text = "Чаевые:",
+            fontSize = 18.sp
+        )
+
+        Slider(
+            value = ProcTea,
+            onValueChange = {
+                ProcTea = it
+            },
+            valueRange = 0f..25f,
+            modifier = Modifier.fillMaxWidth()
+        )
     }
 }
 
