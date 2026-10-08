@@ -150,6 +150,38 @@ fun ScidcaRadioButtons() {
             Text("3%")
         }
 
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            RadioButton(
+                selected = false,
+                onClick = null
+            )
+
+            Text("5%")
+        }
+
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            RadioButton(
+                selected = false,
+                onClick = null
+            )
+
+            Text("7%")
+        }
+
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            RadioButton(
+                selected = true,
+                onClick = null
+            )
+
+            Text("10%")
+        }
     }
 }
 
