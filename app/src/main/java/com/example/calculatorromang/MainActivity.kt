@@ -58,6 +58,10 @@ fun TipCalculatorScreen() {
     var ColVoBlyd by remember { mutableStateOf("") }
     var ProcTea by remember { mutableStateOf(0f) }
 
+    val scidca = calculateScidca(
+        ColVoBlyd.toIntOrNull() ?: 0
+    )
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -136,12 +140,12 @@ fun TipCalculatorScreen() {
             fontSize = 22.sp
         )
 
-        ScidcaRadioButtons()
+        ScidcaRadioButtons(scidca)
     }
 }
 
 @Composable
-fun ScidcaRadioButtons() {
+fun ScidcaRadioButtons(scidca: Int) {
 
     Row(
         modifier = Modifier.fillMaxWidth(),
