@@ -107,6 +107,14 @@ fun TipCalculatorScreen() {
             valueRange = 0f..25f,
             modifier = Modifier.fillMaxWidth()
         )
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Text("0")
+            Text("25")
+        }
     }
 }
 
