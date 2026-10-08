@@ -41,6 +41,16 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+fun calculateScidca(blyd: Int): Int {
+    return when {
+        blyd in 1..2 -> 3
+        blyd in 3..5 -> 5
+        blyd in 6..10 -> 7
+        blyd > 10 -> 10
+        else -> 0
+    }
+}
+
 @Composable
 fun TipCalculatorScreen() {
 
